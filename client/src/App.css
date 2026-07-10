@@ -1,0 +1,61 @@
+.app {
+  min-height: 100vh;
+}
+
+.app.dark-mode {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.app.light-mode {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.notifications-container {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 999;
+  max-width: 400px;
+}
+
+.notification {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  animation: slideIn 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notification-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.notification-error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
